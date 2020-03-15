@@ -1,19 +1,23 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Disk {
+
 
     public  double radius;
 
     public Disk(double radius) {
+        this.radius=radius;
+
     }
 
 
-    public double areaDisk(double radius) {
+    public double areaDisk() {
         double areaDisk = Math.pow(radius, 2) * Math.PI;
         return areaDisk;
     }
 
-    public double areaMonteCarlo(double radius, int samplesCount) {
+    public double areaMonteCarlo(int samplesCount) {
         double area, areaSquare, x, y;
         int k=0;
         Random generator = new Random();
