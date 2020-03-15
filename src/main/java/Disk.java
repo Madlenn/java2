@@ -2,6 +2,11 @@ import java.util.Random;
 
 public class Disk {
 
+    public  double radius;
+
+    public Disk(double radius) {
+    }
+
 
     public double areaDisk(double radius) {
         double areaDisk = Math.pow(radius, 2) * Math.PI;
