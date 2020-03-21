@@ -9,9 +9,8 @@ public class Main {
         double areaOfDisk3 = myDisk3.areaDisk();
         double areaOfMonteCarlo3 = myDisk3.areaMonteCarlo(100000);
         System.out.println("pole koła: " + areaOfDisk3 + '\n' + "montecarlo " + areaOfMonteCarlo3);
-
-
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("podaj promień: ");
         double input = scanner.nextDouble();
         Disk myDisk = new Disk(input);
