@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("promień = 8 \n liczba próbek = 100000");
+        Disk myDisk3 = new Disk(8);
+        double areaOfDisk3 = myDisk3.areaDisk();
+        double areaOfMonteCarlo3 = myDisk3.areaMonteCarlo(100000);
+        System.out.println("pole koła: " + areaOfDisk3 + '\n' + "montecarlo " + areaOfMonteCarlo3);
 
 
         Scanner scanner = new Scanner(System.in);
